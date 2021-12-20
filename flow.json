@@ -1,1 +1,69 @@
-flow.json
+[
+    {
+        "id": "523ce696a63065f5",
+        "type": "led_sta_red",
+        "z": "2c951f35ea3de17f",
+        "name": "",
+        "x": 560,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "a931ee8d192b96ca",
+        "type": "inject",
+        "z": "2c951f35ea3de17f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 270,
+        "y": 300,
+        "wires": [
+            [
+                "523ce696a63065f5"
+            ]
+        ]
+    },
+    {
+        "id": "f6b410ccc5d8f36f",
+        "type": "inject",
+        "z": "2c951f35ea3de17f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 270,
+        "y": 420,
+        "wires": [
+            [
+                "523ce696a63065f5"
+            ]
+        ]
+    }
+]
